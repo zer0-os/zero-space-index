@@ -1,0 +1,27 @@
+<svg height='300px' width='300px' fill="url(#logo-gradient)"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+  <defs>
+    <linearGradient id="logo-gradient" x1="0%" y1="0%" x2="100%" y2="-50%">
+      <stop offset="0%">
+        <animate attributeName="stop-color" values="#706393; #587AE2; #7AC3F4; #9E87C9; #AB6CBA; #706393;" dur="3s" repeatCount="indefinite"></animate>
+      </stop>
+      <stop offset="25%">
+        <animate attributeName="stop-color" values="#587AE2; #7AC3F4; #9E87C9; #AB6CBA; #706393; #587AE2;" dur="3s" repeatCount="indefinite"></animate>
+      </stop>
+      <stop offset="50%">
+        <animate attributeName="stop-color" values="#7AC3F4; #9E87C9; #AB6CBA; #706393; #587AE2; #7AC3F4;" dur="3s" repeatCount="indefinite"></animate>
+      </stop>
+      <stop offset="75%">
+        <animate attributeName="stop-color" values="#9E87C9; #AB6CBA; #706393; #587AE2; #7AC3F4; #9E87C9;" dur="3s" repeatCount="indefinite"></animate>
+      </stop>
+      <stop offset="100%">
+        <animate attributeName="stop-color" values="#AB6CBA; #706393; #587AE2; #7AC3F4; #9E87C9; #AB6CBA;" dur="3s" repeatCount="indefinite"></animate>
+      </stop>
+    </linearGradient>
+  </defs>
+  <g>
+    <path d="M55.476,13.529L37.581,31.424l6.55,24.444l8.792,2.333l-0.927-3.435l-5.353-1.411l-5.17-19.296l19.298,5.17l5.171,19.298   l-2.918-0.806l0.928,3.434l4.625,1.265l17.895-17.896L79.92,20.078L55.476,13.529z M42.269,31.087l14.125-14.125l19.299,5.168   L61.566,36.256L42.269,31.087z M83.039,43.605L68.911,57.73l-5.169-19.299l14.127-14.126L83.039,43.605z"></path>
+    <path d="M55.869,44.13l-8.842-2.401l0.928,3.435l5.401,1.479l5.171,19.298L39.23,60.771l-5.17-19.297l2.894,0.756l-0.928-3.434   l-4.602-1.213L13.529,55.477l6.55,24.445l24.445,6.55l17.895-17.895L55.869,44.13z M16.961,56.395l14.127-14.127l5.171,19.298   L22.132,75.692L16.961,56.395z M43.604,83.041L24.306,77.87l14.127-14.128l19.298,5.171L43.604,83.041z"></path>
+  </g>
+</svg>

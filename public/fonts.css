@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "Eksell Display Large";
+  src: url("/assets/fonts/EksellDisplayWeb-Large.woff2") format("woff2"),
+    url("/assets/fonts/EksellDisplayWeb-Large.eot?#iefix") format("embedded-opentype"),
+    url("/assets/fonts/EksellDisplayWeb-Large.woff") format("woff");
+  font-display: block;
+}
+
+@font-face {
+  font-family: "nebularegular";
+  src: url("/assets/fonts/nebula-regular-webfont.woff2") format("woff2"),
+    url("/assets/fonts/nebula-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
