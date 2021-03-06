@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <div className="overflow-hidden">
       <Head>
-        <title>Wilder World</title>
+        <title>Zer0</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>
