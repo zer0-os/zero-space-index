@@ -10,13 +10,7 @@ module.exports = {
         special: ["eurostile-extended", ...defaultTheme.fontFamily.sans],
       },
       colors: {
-        cybercity: "#026EA4",
-        cave: "#A62D30",
-        forest: "#CD85FF",
-        ["cybercity-text"]: "#67A8C8",
-        ["cave-text"]: "#CA8183",
-        ["forest-text"]: "#CD85FF",
-        ["wilder-purple"]: "rgb(141, 87, 224)"
+        ["zero-purple"]: "#CD85FF"
       },
     },
   },

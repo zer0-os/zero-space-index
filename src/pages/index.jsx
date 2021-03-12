@@ -1,14 +1,8 @@
 import Head from "next/head";
 
-import Footer from "components/Layout/Footer";
+import HUD from "components/Layout/HUD";
 
-import Hero from "components/Hero";
-import FinalCTA from "components/FinalCTA";
-import Projects from "components/Projects";
-import FeaturedArt from "components/FeaturedArt";
-import LiquidArtMarket from "components/LiquidArtMarket";
-import Token from "components/Token";
-import FullVideoSection from "components/FullVideoSection";
+import Hero from "components/Sections/Hero";
 
 export default function Home() {
   return (
@@ -17,16 +11,9 @@ export default function Home() {
         <title>Zer0</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div>
+      <HUD>
         <Hero />
-        {/* <FullVideoSection /> */}
-        {/* <FeaturedArt />
-        <Projects />
-        <Token />
-        <LiquidArtMarket />
-        <FinalCTA /> */}
-        {/* <Footer /> */}
-      </div>
+      </HUD>
     </div>
   );
 }
