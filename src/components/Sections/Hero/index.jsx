@@ -24,7 +24,7 @@ const HeroPage = styled.div`
 export default function Hero() {
   return (
     <HeroPage className="min-h-full">
-      <div className="absolute z-0 w-full h-full opacity-90 overflow-hidden">
+      <div className="absolute z-0 w-full h-full opacity-60 overflow-hidden">
         <video
           className="absolute left-1/2 top-1/2 min-w-full max-w-none min-h-full"
           style={{ transform: "translate(-50%, -50%)" }}
@@ -49,14 +49,14 @@ export default function Hero() {
                 Zero is a decentralized metaverse that enables you to share, trade, and create with your community.
               </div>
             </div>
-            <div className="flex justify-center mt-32">
-              {/* <LinkButton className="text-glow box-glow cursor-pointer" size="large" onClick={(e) => setShowVideo(true)}>
-              Watch Trailer
-            </LinkButton> */}
+            {/* <div className="flex justify-center mt-32">
+              <LinkButton className="text-glow box-glow cursor-pointer" size="large" onClick={(e) => setShowVideo(true)}>
+                Watch Trailer
+            </LinkButton>
               <LinkButton className="" href="https://zer0.io" size="large" style="2">
                 Explore Worlds
               </LinkButton>
-            </div>
+            </div> */}
           </div>
         </Fade>
       </div>

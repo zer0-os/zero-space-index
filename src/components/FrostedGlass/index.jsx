@@ -1,11 +1,12 @@
 import styled from "styled-components";
 
 const StyledGlass = styled.div`
-  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.1);
   position: relative;
   z-index: 1;
   background: inherit;
   backdrop-filter: blur(30px);
+  overflow: hidden;
 
   &:before {
     content: "";
@@ -23,5 +24,5 @@ const StyledGlass = styled.div`
 `;
 
 export default function FrostedGlass({ children }) {
-  return <StyledGlass className="p-8 text-white rounded-xl">{children}</StyledGlass>;
+  return <StyledGlass className="p-4 text-white rounded-xl">{children}</StyledGlass>;
 }

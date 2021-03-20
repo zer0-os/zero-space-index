@@ -10,7 +10,8 @@ module.exports = {
         special: ["eurostile-extended", ...defaultTheme.fontFamily.sans],
       },
       colors: {
-        ["zero-purple"]: "#CD85FF"
+        ["zero-purple"]: "#CD85FF",
+        ["zero-purple-light"]: "#DEAFFF"
       },
     },
   },
