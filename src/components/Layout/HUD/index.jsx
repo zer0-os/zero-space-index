@@ -1,18 +1,24 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import GhostContentAPI from "@tryghost/content-api";
 import dayjs from "dayjs";
+import { gsap, Power4 } from "gsap";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
 
 import LinkButton from "components/LinkButton";
 import FrostedGlass from "components/FrostedGlass";
 
+gsap.registerPlugin(ScrollTrigger);
+
 const api = new GhostContentAPI({
-  host: "https://n3owilder.ghost.io",
+  url: "https://n3owilder.ghost.io",
   key: "b2d61cb39e116f85a3f6252a61",
   version: "v3",
 });
 
 export default function HUD({ children }) {
   const [post, setPost] = useState(null);
+
+  const gsapTimeline = gsap.timeline();
 
   useEffect(() => {
     api.posts
@@ -24,16 +30,66 @@ export default function HUD({ children }) {
       });
   }, []);
 
+  useEffect(() => {
+    gsapTimeline
+      .add("start")
+      .to(".anim-header", {
+        ease: "cubicIn",
+        opacity: 1,
+        duration: 1,
+      })
+      .to(
+        ".anim-hud-top",
+        {
+          top: 0,
+          duration: 2,
+        },
+        "start"
+      )
+      .to(
+        ".anim-hud-bot",
+        {
+          bottom: 0,
+          duration: 2,
+        },
+        "start"
+      )
+      .fromTo(
+        ".anim-top-alt",
+        {
+          top: "-150px",
+        },
+        {
+          top: 0,
+          ease: Power4.out,
+          duration: 1,
+        }
+      )
+      .fromTo(
+        ".anim-notif",
+        {
+          right: -550,
+        },
+        {
+          ease: "cubicIn",
+          duration: 1,
+          right: 0,
+        }
+      );
+  }, []);
+
   return (
-    <div>
+    <div className="anim-header" style={{ opacity: 0 }}>
       <div>{children}</div>
       <div className="absolute left-0 right-0 top-0 w-full">
-        <img
-          className="content-glow-hard absolute top-0 inline-block mt-2 w-full max-h-20 pointer-events-none"
-          src="/assets/hud/top.svg"
-          alt="HUD Top"
-        />
-        <div className="flex items-center justify-between align-middle mt-4 p-6">
+        <div style={{ top: "-200px" }} className="anim-hud-top absolute top-0 w-full">
+          <img
+            className="content-glow-hard absolute top-0 inline-block mt-2 w-full max-h-20 pointer-events-none"
+            src="/assets/hud/top.svg"
+            alt="HUD Top"
+          />
+        </div>
+        <div className="anim-top-alt relative flex items-center justify-between align-middle mt-4 p-6">
           <div>
             <a href="/" aria-label="Home">
               <img
@@ -51,12 +107,14 @@ export default function HUD({ children }) {
         </div>
       </div>
       <div className="absolute bottom-0 left-0 right-0 w-full">
-        <img
-          className="content-glow-hard absolute bottom-0 inline-block mb-2 w-full max-h-20 pointer-events-none"
-          src="/assets/hud/bot.svg"
-          alt="HUD Top"
-        />
-        <div className="flex items-center justify-between align-middle mb-4">
+        <div style={{ bottom: "-200px" }} className="anim-hud-bot absolute bottom-0 w-full">
+          <img
+            className="content-glow-hard anim-hud-bot absolute bottom-0 inline-block mb-2 w-full max-h-20 pointer-events-none"
+            src="/assets/hud/bot.svg"
+            alt="HUD Bot"
+          />
+        </div>
+        <div className="flex items-center justify-between align-middle mb-4 p-6">
           <div className="m-0">
             {/* <FrostedGlass>
               <div>Test</div>
@@ -64,7 +122,7 @@ export default function HUD({ children }) {
               <div>Test</div>
             </FrostedGlass> */}
           </div>
-          <div className="m-4 w-96 max-w-full md:m-6">
+          <div className="m-4 w-96 max-w-full md:m-6" className="anim-notif" style={{ position: "relative" }}>
             <FrostedGlass>
               {post && (
                 <a href={post.url} target="_blank">

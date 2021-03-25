@@ -21,6 +21,7 @@
     "@use-it/interval": "^1.0.0",
     "dayjs": "^1.10.4",
     "framer-motion": "^3.3.0",
+    "gsap": "^3.6.0",
     "next": "^10.0.0",
     "polished": "^4.1.0",
     "react": "^17.0.0",
