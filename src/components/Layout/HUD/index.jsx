@@ -57,10 +57,10 @@ export default function HUD({ children }) {
       .fromTo(
         ".anim-top-alt",
         {
-          top: "-150px",
+          opacity: 0,
         },
         {
-          top: 0,
+          opacity: 1,
           ease: Power4.out,
           duration: 1,
         }
@@ -68,12 +68,12 @@ export default function HUD({ children }) {
       .fromTo(
         ".anim-notif",
         {
-          right: -550,
+          bottom: -550,
         },
         {
           ease: "cubicIn",
           duration: 1,
-          right: 0,
+          bottom: 0,
         }
       );
   }, []);
@@ -100,7 +100,14 @@ export default function HUD({ children }) {
             </a>
           </div>
           <div>
-            <LinkButton className="" href="https://app.zer0.io" size="large">
+            <a
+              className="mr-6 text-gray-300 hover:text-zero-purple transition-all duration-300"
+              href="https://docs.zero.space"
+              size="large"
+            >
+              Docs
+            </a>
+            <LinkButton className="" href="https://zer0.io" size="large">
               Launch Zero
             </LinkButton>
           </div>
