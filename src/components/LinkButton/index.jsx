@@ -49,7 +49,7 @@ export default function LinkButton({ href, size, className, children, style = "w
       className={`
         ${className}
         ${`btn-style-sp`}
-        inline-flex items-center font-medium rounded-full focus:outline-none focus:border-none focus:shadow-outline-none transition duration-150 ease-in-out relative
+        inline-flex items-center font-medium rounded-full focus:outline-none focus:border-none focus:shadow-outline-none transition duration-300 ease-in-out relative
         overflow-hidden
         `}
       target="_blank"
