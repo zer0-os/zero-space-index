@@ -11,7 +11,8 @@ module.exports = {
       },
       colors: {
         ["zero-purple"]: "#CD85FF",
-        ["zero-purple-light"]: "#DEAFFF"
+        ["zero-purple-light"]: "#DEAFFF",
+        ["zero-bg"]: "rgb(45, 0, 77)",
       },
     },
   },

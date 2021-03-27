@@ -103,7 +103,7 @@ export default function HUD({ children }) {
             <a
               className="mr-6 text-gray-300 hover:text-zero-purple transition-all duration-300"
               href="https://docs.zero.space"
-              size="large"
+              target="_blank"
             >
               Docs
             </a>
