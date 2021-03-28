@@ -102,12 +102,12 @@ export default function HUD({ children }) {
           <div>
             <a
               className="mr-6 text-gray-300 hover:text-zero-purple transition-all duration-300"
-              href="https://docs.zero.space"
+              href="https://www.zero.study"
               target="_blank"
             >
               Docs
             </a>
-            <LinkButton className="" href="https://zer0.io" size="large">
+            <LinkButton className="" href="https://zer0.io/a/login" size="large">
               Launch Zero
             </LinkButton>
           </div>

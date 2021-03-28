@@ -51,14 +51,14 @@ export default function Hero() {
                 Zero is a decentralized metaverse that enables you to share, trade, and create with your community.
               </div>
             </div>
-            {/* <div className="flex justify-center mt-32">
-              <LinkButton className="text-glow box-glow cursor-pointer" size="large" onClick={(e) => setShowVideo(true)}>
+            <div className="flex justify-center mt-12">
+              {/* <LinkButton className="text-glow box-glow cursor-pointer" size="large" onClick={(e) => setShowVideo(true)}>
                 Watch Trailer
-            </LinkButton>
-              <LinkButton className="" href="https://zer0.io" size="large" style="2">
-                Explore Worlds
+            </LinkButton> */}
+              <LinkButton className="" href="https://www.zine.live/subscribe/" size="large">
+                Join Waitlist
               </LinkButton>
-            </div> */}
+            </div>
           </div>
         </Fade>
       </div>
