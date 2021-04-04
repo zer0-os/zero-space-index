@@ -121,7 +121,7 @@ export default function HUD({ children }) {
             alt="HUD Bot"
           />
         </div>
-        <div className="flex items-center justify-between align-middle mb-4 p-6">
+        <div className="flex items-center justify-between align-middle p-2 md:mb-4">
           <div className="m-0">
             {/* <FrostedGlass>
               <div>Test</div>
@@ -129,7 +129,7 @@ export default function HUD({ children }) {
               <div>Test</div>
             </FrostedGlass> */}
           </div>
-          <div className="m-4 w-96 max-w-full md:m-6" className="anim-notif" style={{ position: "relative" }}>
+          <div className="anim-notif" style={{ position: "relative" }}>
             <FrostedGlass>
               {post && (
                 <a href={post.url} target="_blank">

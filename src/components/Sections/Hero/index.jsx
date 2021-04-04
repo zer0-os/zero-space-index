@@ -38,7 +38,7 @@ export default function Hero() {
       </div>
       <div className="absolute flex items-center justify-center w-full h-full">
         <Fade bottom cascade>
-          <div className="text-center text-white">
+          <div className="mb-24 px-4 text-center text-white md:mb-48">
             <div>
               <div className="text-shadow-sp font-special text-4xl font-medium md:text-5xl xl:text-6xl">
                 Build Your World
@@ -51,7 +51,7 @@ export default function Hero() {
                 Zero is a decentralized metaverse that enables you to share, trade, and create with your community.
               </div>
             </div>
-            <div className="flex justify-center mt-12">
+            <div className="flex justify-center mt-12 md:mt-24">
               {/* <LinkButton className="text-glow box-glow cursor-pointer" size="large" onClick={(e) => setShowVideo(true)}>
                 Watch Trailer
             </LinkButton> */}

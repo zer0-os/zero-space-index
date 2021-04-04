@@ -29,7 +29,7 @@ export default class MyDocument extends Document {
 
   render() {
     return (
-      <Html lang="en">
+      <Html lang="en" className="overflow-y-hidden">
         <Head>
           <meta name="theme-color" content="#111116" />
           <link rel="stylesheet" href="https://use.typekit.net/dqh8dph.css" />
@@ -37,7 +37,7 @@ export default class MyDocument extends Document {
           <link rel="icon" href="/favicon.png" />
         </Head>
         <body
-          className="bg-size-small lg:bg-size-large"
+          className="bg-size-small lg:bg-size-large h-full overflow-hidden"
           style={{
             // backgroundImage: "url(/assets/repeating/pattern-grid.svg)",
             backgroundColor: "#111116",
