@@ -134,8 +134,11 @@ export default function HUD({ children }) {
               {post && (
                 <a href={post.url} target="_blank">
                   <div className="flex">
-                    <div className="glow-sp flex-shrink-0 w-24 h-24 rounded-2xl overflow-hidden">
-                      <img src={post.feature_image} className="h-full" />
+                    <div
+                      className="glow-sp flex-shrink-0 w-24 h-24 rounded-2xl overflow-hidden"
+                      style={{ background: `url(${post.feature_image}) center center / cover` }}
+                    >
+                      {/* <img src={post.feature_image} className="h-full" /> */}
                     </div>
                     <div className="flex flex-col flex-grow justify-between pl-4">
                       <div className="text-zero-purple text-xs">{dayjs(post.published_at).format("MMMM D, YYYY")}</div>

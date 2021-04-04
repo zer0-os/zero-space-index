@@ -15,11 +15,11 @@ const ButtonEffect = styled.div`
     z-index: 1;
   }
 
-  &:hover {
-    &:after {
-      animation: swoosh 0.7s ease-in;
-    }
-  }
+  // &:hover {
+  //   &:after {
+  //     animation: swoosh 0.7s ease-in;
+  //   }
+  // }
 
   @keyframes swoosh {
     0% {

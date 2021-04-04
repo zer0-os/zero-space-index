@@ -8,7 +8,7 @@
   }
 
   .btn-style-sp {
-    @apply text-white hover:text-zero-purple text-opacity-90 bg-zero-bg bg-opacity-50 hover:bg-opacity-80 border-b-0 border-t-0 border-white border-opacity-75;
+    @apply text-white hover:text-zero-purple text-opacity-90 bg-zero-bg bg-opacity-50 hover:bg-opacity-80 border-b-0 border-t-0 border-zero-purple border-opacity-75;
     border-left-width: 3px;
     border-right-width: 3px;
 
