@@ -129,7 +129,7 @@ export default function HUD({ children }) {
               <div>Test</div>
             </FrostedGlass> */}
           </div>
-          <div className="anim-notif" style={{ position: "relative" }}>
+          <div className="anim-notif w-96 max-w-full" style={{ position: "relative" }}>
             <FrostedGlass>
               {post && (
                 <a href={post.url} target="_blank">
@@ -141,9 +141,9 @@ export default function HUD({ children }) {
                       {/* <img src={post.feature_image} className="h-full" /> */}
                     </div>
                     <div className="flex flex-col flex-grow justify-between pl-4">
-                      <div className="text-zero-purple text-xs">{dayjs(post.published_at).format("MMMM D, YYYY")}</div>
-                      <div className="text-md text-zero-purple-light leading-4">{post.title}</div>
-                      <div className="text-gray-100 text-sm">Read at zine.live</div>
+                      <div className="text-xs">{dayjs(post.published_at).format("MMMM D, YYYY")}</div>
+                      <div className="text-md leading-4">{post.title}</div>
+                      <div className="text-sm">Read at zine.live</div>
                     </div>
                   </div>
                 </a>
