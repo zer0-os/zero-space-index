@@ -37,7 +37,7 @@ export default class MyDocument extends Document {
           <link rel="icon" href="/favicon.png" />
         </Head>
         <body
-          className="bg-size-small lg:bg-size-large h-full overflow-hidden"
+          className="bg-size-small lg:bg-size-large h-full overflow-hidden overscroll-none"
           style={{
             // backgroundImage: "url(/assets/repeating/pattern-grid.svg)",
             backgroundColor: "#111116",
