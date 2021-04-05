@@ -101,14 +101,14 @@ export default function HUD({ children }) {
           </div>
           <div>
             <a
-              className="mx-6 text-gray-300 hover:text-zero-purple transition-all duration-300"
+              className="mr-4 text-gray-300 hover:text-zero-purple transition-all duration-300"
               href="https://www.zine.live/subscribe/"
               target="_blank"
             >
               Waitlist
             </a>
             <a
-              className="mx-6 text-gray-300 hover:text-zero-purple transition-all duration-300"
+              className="hidden mr-4 text-gray-300 hover:text-zero-purple transition-all duration-300 md:inline-block"
               href="https://www.zero.study"
               target="_blank"
             >
