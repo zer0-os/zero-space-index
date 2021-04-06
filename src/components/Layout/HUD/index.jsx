@@ -101,7 +101,14 @@ export default function HUD({ children }) {
           </div>
           <div>
             <a
-              className="mr-6 text-gray-300 hover:text-zero-purple transition-all duration-300"
+              className="mr-4 text-gray-300 hover:text-zero-purple transition-all duration-300"
+              href="https://www.zine.live/subscribe/"
+              target="_blank"
+            >
+              Waitlist
+            </a>
+            <a
+              className="hidden mr-4 text-gray-300 hover:text-zero-purple transition-all duration-300 md:inline-block"
               href="https://www.zero.study"
               target="_blank"
             >
@@ -121,7 +128,7 @@ export default function HUD({ children }) {
             alt="HUD Bot"
           />
         </div>
-        <div className="flex items-center justify-between align-middle mb-4 p-6">
+        <div className="flex items-center justify-between align-middle p-2 md:mb-4">
           <div className="m-0">
             {/* <FrostedGlass>
               <div>Test</div>
@@ -129,7 +136,7 @@ export default function HUD({ children }) {
               <div>Test</div>
             </FrostedGlass> */}
           </div>
-          <div className="m-4 w-96 max-w-full md:m-6" className="anim-notif" style={{ position: "relative" }}>
+          <div className="anim-notif w-96 max-w-full" style={{ position: "relative" }}>
             <FrostedGlass>
               {post && (
                 <a href={post.url} target="_blank">
@@ -141,9 +148,9 @@ export default function HUD({ children }) {
                       {/* <img src={post.feature_image} className="h-full" /> */}
                     </div>
                     <div className="flex flex-col flex-grow justify-between pl-4">
-                      <div className="text-zero-purple text-xs">{dayjs(post.published_at).format("MMMM D, YYYY")}</div>
-                      <div className="text-md text-zero-purple-light leading-4">{post.title}</div>
-                      <div className="text-gray-100 text-sm">Read at zine.live</div>
+                      <div className="text-xs">{dayjs(post.published_at).format("MMMM D, YYYY")}</div>
+                      <div className="text-md leading-4">{post.title}</div>
+                      <div className="text-sm">Read at zine.live</div>
                     </div>
                   </div>
                 </a>

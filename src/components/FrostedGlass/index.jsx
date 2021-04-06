@@ -24,5 +24,9 @@ const StyledGlass = styled.div`
 `;
 
 export default function FrostedGlass({ children }) {
-  return <StyledGlass className="p-4 text-white rounded-xl">{children}</StyledGlass>;
+  return (
+    <StyledGlass className="p-4 text-white hover:text-zero-purple rounded-xl transition duration-150">
+      {children}
+    </StyledGlass>
+  );
 }
