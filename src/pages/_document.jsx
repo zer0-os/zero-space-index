@@ -29,7 +29,7 @@ export default class MyDocument extends Document {
 
   render() {
     return (
-      <Html lang="en" className="overflow-y-hidden">
+      <Html lang="en" className="overflow-hidden overscroll-none">
         <Head>
           <meta name="theme-color" content="#111116" />
           <link rel="stylesheet" href="https://use.typekit.net/dqh8dph.css" />
