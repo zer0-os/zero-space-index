@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className="overflow-hidden">
       <Head>
-        <title>ZERO</title>
+        <title>ZERO SPACE</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <HUD>
