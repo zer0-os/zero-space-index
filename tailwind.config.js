@@ -6,8 +6,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["eurostile", ...defaultTheme.fontFamily.sans],
-        special: ["eurostile-extended", ...defaultTheme.fontFamily.sans],
+        sans: ["Inter", ...defaultTheme.fontFamily.sans],
+        special: ["ddt_cd_bk", ...defaultTheme.fontFamily.sans],
       },
       colors: {
         ["zero-purple"]: "#CD85FF",

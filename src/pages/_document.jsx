@@ -33,7 +33,11 @@ export default class MyDocument extends Document {
         <Head>
           <meta name="theme-color" content="#111116" />
           <link rel="stylesheet" href="https://use.typekit.net/dqh8dph.css" />
-          <link rel="stylesheet" href="/fonts.css" />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=block"
+            rel="stylesheet"
+          />
+          <link rel="stylesheet" href="/fonts/ddt_condensedbook_macroman/stylesheet.css" />
           <link rel="icon" href="/favicon.png" />
         </Head>
         <body

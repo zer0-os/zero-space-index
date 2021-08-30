@@ -47,7 +47,7 @@ export default function Hero() {
               {/* <div className="text-glow font-special text-6xl md:text-7xl xl:text-8xl">of the Future</div> */}
             </div>
             <div className="mt-6 px-10">
-              <div className="text-shadow-sp max-w-lg text-lg xl:text-2xl">
+              <div className="text-shadow-sp text-md max-w-lg xl:text-xl">
                 Zero is a decentralized metaverse that enables you to share, trade, and create with your community.
               </div>
             </div>

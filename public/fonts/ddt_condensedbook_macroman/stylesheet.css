@@ -1,0 +1,7 @@
+@font-face {
+  font-family: "ddt_cd_bk";
+  src: url("ddt_cd_bk-webfont.woff2") format("woff2"), url("ddt_cd_bk-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
