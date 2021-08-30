@@ -40,7 +40,7 @@ export default function Hero() {
         <Fade bottom cascade>
           <div className="mb-24 px-4 text-center text-white md:mb-64">
             <div>
-              <div className="text-shadow-sp font-special text-4xl font-medium md:text-5xl xl:text-6xl">
+              <div className="text-shadow-sp font-special text-4xl font-medium uppercase md:text-5xl xl:text-6xl">
                 Build Your World
               </div>
               {/* <div className="text-xl md:text-2xl xl:text-3xl">of the</div> */}
